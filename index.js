@@ -49,6 +49,6 @@ app.get('/:time', function (request, response) {
   response.json(jsonToReturn);
 });
 
-app.listen(process.env.PORT, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('listening...');
 });
