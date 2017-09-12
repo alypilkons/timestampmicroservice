@@ -2,21 +2,28 @@
 <head>
   <meta charset="utf-8">
   <title>Timestamp Microservice</title>
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
   <h1>Timestamp Microservice</h1>
   <div id="directionsContainer">
-    <p>This app allows you to pass a string as a parameter, and checks whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</p>
-    <p>It then provides both the unix timestamp and the natural language date associated with that parameter as a JSON object</p>
+    <p>This app allows you to pass a string as a parameter, and checks whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).</p>
+    <p>It then provides both the unix timestamp and the natural language date associated with that parameter as a JSON object.</p>
   </div>
   <div id="exampleUsage">
     <div id="input">
-
+      <p>Example inputs:</p>
+      <a href="http://alypilkons-fcc-timestamp.herokuapp.com/september%2012%202015">http://alypilkons-fcc-timestamp.herokuapp.com/september%2012%202015</a>
+      <br>
+      <a href="http://alypilkons-fcc-timestamp.herokuapp.com/sept%2012%202015">http://alypilkons-fcc-timestamp.herokuapp.com/sept 12, 2015</a>
+      <br>
+      <a href="http://alypilkons-fcc-timestamp.herokuapp.com/1442016000">http://alypilkons-fcc-timestamp.herokuapp.com/1442016000</a>
+      <br>
     </div>
     <div id="output">
-      <code>{"unix":599288400,"natural":"December 28, 1988"}</code>
+      <p>Example output:</p>
+      <code>{"unix":599288400,"natural":"September 12, 2015"}</code>
     </div>
   </div>
 </body>
