@@ -1,0 +1,17 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "FCC back end project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dateformat": "^2.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "hbs": "^4.0.1"
+  }
+}
