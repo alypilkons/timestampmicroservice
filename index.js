@@ -45,8 +45,9 @@ app.get('/:time', function (request, response) {
     }
   } else {
   // UNIX to NATURAL
-    unix = Number(time) * 1000;
-    let date = new Date(unix);
+    unix = time;
+    let unixMult = Number(time) * 1000;
+    let date = new Date(unixMult);
     try {
       natural = dateformat(date, 'longDate');
     } catch (err) {
