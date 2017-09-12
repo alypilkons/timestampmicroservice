@@ -45,7 +45,7 @@ app.get('/:time', function (request, response) {
     }
   } else {
   // UNIX to NATURAL
-    unix = time;
+    unix = Number(time);
     let unixMult = Number(time) * 1000;
     let date = new Date(unixMult);
     try {
